@@ -85,7 +85,7 @@ export default function ProductsPage() {
         <div className="flex-grow">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
             {products.map((product) => (
-              <ProductCard key={product.id} product={product} variant="listing" />
+              <ProductCard key={product.id} product={product} />
             ))}
           </div>
 
