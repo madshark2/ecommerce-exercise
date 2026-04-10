@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ALPINE | Patagonia Backpacks</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800;900&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-fixed-dim": "#accec2",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e3e3de",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#2e476f",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f1f1ec",
+                        "surface-container-low": "#f4f4ef",
+                        "surface": "#fafaf4",
+                        "on-secondary-container": "#4b6b61",
+                        "surface-dim": "#dadad5",
+                        "outline-variant": "#c1c8c4",
+                        "secondary-container": "#c7eade",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#2e476f",
+                        "on-tertiary-fixed": "#3b0900",
+                        "on-primary-fixed": "#001b3d",
+                        "surface-tint": "#465f88",
+                        "on-secondary-fixed": "#002019",
+                        "on-secondary-fixed-variant": "#2e4d44",
+                        "inverse-surface": "#2f312e",
+                        "on-background": "#1a1c19",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#c7eade",
+                        "on-tertiary-fixed-variant": "#842509",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e3e3de",
+                        "on-tertiary-container": "#ff9c81",
+                        "secondary": "#45655b",
+                        "primary": "#153158",
+                        "on-surface": "#1a1c19",
+                        "background": "#fafaf4",
+                        "on-primary-container": "#9db6e5",
+                        "surface-container-high": "#e8e8e3",
+                        "outline": "#717975",
+                        "tertiary": "#611400",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-surface-variant": "#414845",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#84260a",
+                        "primary-fixed-dim": "#aec7f7",
+                        "surface-container": "#eeeee9",
+                        "tertiary-fixed-dim": "#ffb5a1",
+                        "surface-bright": "#fafaf4",
+                        "inverse-primary": "#aec7f7",
+                        "primary-fixed": "#d6e3ff"
+                    },
+                    fontFamily: {
+                        "headline": ["Epilogue"],
+                        "body": ["Work Sans"],
+                        "label": ["Work Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Work Sans', sans-serif; }
+        h1, h2, h3, .brand-font { font-family: 'Epilogue', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<nav class="bg-[#fafaf4]/85 dark:bg-stone-900/85 backdrop-blur-md fixed top-0 w-full z-50">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-[1920px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-[#153158] dark:text-white uppercase brand-font">
+                ALPINE
+            </div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Epilogue'] tracking-tight text-sm font-semibold uppercase text-stone-600 dark:text-stone-400 hover:text-[#153158] dark:hover:text-white transition-colors" href="#">Everyday</a>
+<a class="font-['Epilogue'] tracking-tight text-sm font-semibold uppercase text-[#153158] dark:text-white border-b-2 border-[#153158] dark:border-white pb-1" href="#">Hiking</a>
+<a class="font-['Epilogue'] tracking-tight text-sm font-semibold uppercase text-stone-600 dark:text-stone-400 hover:text-[#153158] dark:hover:text-white transition-colors" href="#">Climbing</a>
+<a class="font-['Epilogue'] tracking-tight text-sm font-semibold uppercase text-stone-600 dark:text-stone-400 hover:text-[#153158] dark:hover:text-white transition-colors" href="#">New Arrivals</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="hover:opacity-80 transition-opacity duration-200 scale-95 active:transition-transform duration-150 text-[#153158] dark:text-blue-200">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-200 scale-95 active:transition-transform duration-150 text-[#153158] dark:text-blue-200">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button class="hover:opacity-80 transition-opacity duration-200 scale-95 active:transition-transform duration-150 text-[#153158] dark:text-blue-200">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20 px-8 max-w-[1920px] mx-auto">
+<!-- Hero Header -->
+<header class="mb-16">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-end">
+<div class="md:col-span-8">
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter text-primary uppercase leading-[0.9]">
+                        Technical<br/>Packs.
+                    </h1>
+<p class="mt-8 text-lg text-on-surface-variant max-w-xl leading-relaxed">
+                        Engineered for the vertical, the trail, and the long haul. Our Patagonia collection represents the pinnacle of sustainable utility and rugged durability.
+                    </p>
+</div>
+<div class="md:col-span-4 flex justify-end">
+<div class="text-right">
+<span class="label-md uppercase tracking-widest font-semibold text-tertiary">Spring 2024</span>
+<div class="text-2xl font-bold mt-2">12 Items Filtered</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Product Grid Layout -->
+<div class="flex flex-col md:flex-row gap-12">
+<!-- Filters Sidebar -->
+<aside class="w-full md:w-64 flex-shrink-0 space-y-12">
+<div>
+<h3 class="font-headline text-sm font-bold uppercase tracking-widest mb-6 border-b border-outline-variant/20 pb-2">Category</h3>
+<ul class="space-y-4 font-body text-sm">
+<li class="flex items-center justify-between text-on-surface hover:text-primary cursor-pointer transition-colors">
+<span>Everyday</span>
+<span class="text-xs opacity-50">04</span>
+</li>
+<li class="flex items-center justify-between font-bold text-primary cursor-pointer transition-colors">
+<span>Hiking</span>
+<span class="text-xs opacity-50">03</span>
+</li>
+<li class="flex items-center justify-between text-on-surface hover:text-primary cursor-pointer transition-colors">
+<span>Trail Running</span>
+<span class="text-xs opacity-50">02</span>
+</li>
+<li class="flex items-center justify-between text-on-surface hover:text-primary cursor-pointer transition-colors">
+<span>Climbing</span>
+<span class="text-xs opacity-50">01</span>
+</li>
+<li class="flex items-center justify-between text-on-surface hover:text-primary cursor-pointer transition-colors">
+<span>Travel</span>
+<span class="text-xs opacity-50">02</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-headline text-sm font-bold uppercase tracking-widest mb-6 border-b border-outline-variant/20 pb-2">Volume (Liters)</h3>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-2 px-3 text-xs font-bold border border-outline-variant/40 hover:bg-primary hover:text-white transition-all">18L - 25L</button>
+<button class="py-2 px-3 text-xs font-bold border border-outline-variant/40 hover:bg-primary hover:text-white transition-all">26L - 32L</button>
+<button class="py-2 px-3 text-xs font-bold border border-outline-variant/40 hover:bg-primary hover:text-white transition-all bg-primary text-white">33L - 40L</button>
+<button class="py-2 px-3 text-xs font-bold border border-outline-variant/40 hover:bg-primary hover:text-white transition-all">40L+</button>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-sm font-bold uppercase tracking-widest mb-6 border-b border-outline-variant/20 pb-2">Price Range</h3>
+<div class="space-y-4">
+<input class="w-full h-1 bg-surface-container-highest appearance-none cursor-pointer accent-primary" max="500" min="50" type="range"/>
+<div class="flex justify-between text-xs font-bold opacity-60">
+<span>$50</span>
+<span>$500</span>
+</div>
+</div>
+</div>
+<div class="pt-8">
+<img alt="Environmental contextual shot" class="w-full h-64 object-cover grayscale contrast-125 mb-4" data-alt="dramatic wide shot of a rugged mountain peak at sunset with warm orange light hitting the rocky surfaces" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtbwvDT-mbDMdJLNzssH54P95MtlNgqCoXSP-hKB70TM1vjSE03joMbpA476MP0ur7y93uMVdpluYwWmUse4HK28Yc0C7m_nZLhtN5QBy40dJbBpvv2gTaAn1A47sGlsL-5dyL49Rt7Br67NfYDVFW2Y6m66n1MAlJM4YbbFEQvnXsbQC3dDOtFD9LCuyOqlEV6ued-e2Jk3NEKOTtM4eNq4dc10d7aauuqgprqORkrEg6Qpkn4z4z3-rRLWlo5EHTzjZHuDMkaSAa"/>
+<p class="text-[10px] uppercase tracking-[0.2em] font-bold text-on-surface-variant leading-relaxed">
+                        Every purchase contributes to our 1% for the Planet commitment.
+                    </p>
+</div>
+</aside>
+<!-- Main Listing Grid -->
+<div class="flex-grow">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Product 1 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Black Hole Pack 25L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="studio product shot of a durable matte black tactical backpack on a light grey background with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQUQHQmYcQa00ID7A7LIkZUMfdRlY3WWTvFG-D1dwj8zKNc4lWOZ0yBUAS9MBebiU1BynWtVYqXNiV0AegQmLhL5GT7yD3BXrhxuDCdH4lPBgnJcRWg5A_TmUc6POIiZyTGK5BbXedEOKc5kykeWCA-na-xGgn1DUuqYCTfjbBIsuzQa-6jSWrTE2Ed8BUsavKJ-J2iIx3YEohmh8rv24WVZc0iggziltdNfLop_lXDJP-FT3T5fcMSLFDqZk_30cayx9wCsGGeibB"/>
+<span class="absolute top-4 left-4 bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 text-[10px] font-black uppercase tracking-widest">New</span>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Everyday / 25L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Black Hole® Pack 25L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$159</span>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Ascensionist Pack 35L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="high contrast photo of a technical climbing backpack in light blue color against a textured granite wall background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRQr4ry95gSm0CXywepEsAgLpV8vwpX5nXHQoo4OnPpCDMyKY1UrR4L1Lz2J8URMS7LHX6TxxYixGdc8MZhVrKsmeZWMH59goHP_KK28Hy19AG1lnaErpYPknjSptqFJztQc95NS4RPQ78mVedMMR7ONPhv7PNtmlPyiao-koUOetyTQN6soR6hfRYpEGIUd1MefoeA5R43iivG2JjM2KAf9jjJ6UR_o_hKjGsDgjsv6YzV8MR4aT8fHdjjwAGG3iMdiQMaP0RlNPc"/>
+<span class="absolute top-4 left-4 bg-secondary-container text-on-secondary-container px-3 py-1 text-[10px] font-black uppercase tracking-widest">Technical</span>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Climbing / 35L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Ascensionist Pack 35L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$179</span>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Altvia Pack 22L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="close-up detail of a navy blue hiking backpack featuring technical mesh straps and cord adjustments in outdoor light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD09x7d68-7okFeDcPO4H8hgI6kvEHQ9_pRUb5bin7iLmlR_CqLvrVT-vx_PkEX3_ut-_WpNAb245S8wwKhxLD7cwdY5XYUzV5NkVpRg_u_scECBvkkgnIKz_yjcaIfKCM8VKbiiKnxewN9UQ1tlzvYqoTkNbNN9IKj9DsWoplZAfvCqr1Gw1lECHYYxliKtCH9O1WWP5FghU8tn23t1XyNZ6_bKvx_iF7TfUVWwHSjDK2ocWA9qL6xKoUuZwNjij7zguzufnXvEE7K"/>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Hiking / 22L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Altvia Pack 22L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$129</span>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="SnowDrifter Pack 30L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="white minimalist mountain backpack for skiing shown in a high-key bright studio setting with soft cool lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_zlDrXH6V7XBuQoXw7j01mVoTXfzxujwxLBTpvtC3tkHIpAr4BJaPuWp6PZXVl_Q29rFn9RbMGXG-KTfW5Y8jBAq__oXxPJ954d4SftMouQn65o1WiHq_IfuiYWut4VhiuDCzWJaHGkiX35xjE2rZp5bFgBnPNtTkLKMpy5Kxfl1N0An4CrCChahQ_BEnGzWyDZzoogwHZ3twVQtAcpYj-EaL9oOugBE4tzqXHUGPN5WcQMNY9aYuW9ZvXUCtbqdC7r0Q1Yb70J4r"/>
+<span class="absolute top-4 left-4 bg-primary-container text-on-primary-container px-3 py-1 text-[10px] font-black uppercase tracking-widest">Snow</span>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Ski/Snow / 30L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">SnowDrifter Pack 30L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$169</span>
+</div>
+</div>
+<!-- Product 5 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Chacabuco Pack 30L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="earth-toned brown backpack on a simple wooden surface with organic morning light filtering through a window" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDMLzSAfZNdTIQIx_jDnsJnZ2oXqiBqIvI3q9WTbWvze0hyt29lYi5ulRbtPyr8dmcKBMrB0yNfrzN-VAgdj0MnIV_YeOMVZcazbdy33tRber3cIB9cf8NfaE1MEd36YxQ65DqlsRktuCYXfa_dfHur9PLua8T6tXGW57uzDULv9c6sMHWVd-7taYFt-TUuZ7F0GAxewLQOPFzb55VGSK-89z2qUKeime8WwaGj9RRIZ6xShgPyPvYc4tknQ3XFNqhemj41WaA5zJpg"/>
+<span class="absolute top-4 left-4 bg-surface-container-highest text-on-surface-variant px-3 py-1 text-[10px] font-black uppercase tracking-widest">Classic</span>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Everyday / 30L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Chacabuco Pack 30L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$99</span>
+</div>
+</div>
+<!-- Product 6 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Nine Trails Pack 14L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="compact grey trail running pack with lime green accents shown on a dark reflective surface with cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAboHfyjNghPvdfs5zfqMc1whZr1a8nN1yy1GxcqviRig5S6pT1PhxK-cxiSKAQEgpI2Pxd7DhuKghp7mqmJ1nhmDzYbeKVkPUwlnIeSmbY4YutQ8snns5x5LpcfFYZQOUJtLyPKmAO6JPfRPSmMOPtTI9q5rMOs4GwA2-p6sTyNp1mNaWN1cjLytpsuZVUPk-n5BoDN4YJEtAS1nszKaWtNwDrvD9pEjWe4roxOFzpxah7r5CfkuSai_cHvBByA6mOS8-5HgfDlmHn"/>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Trail Running / 14L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Nine Trails Pack 14L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$139</span>
+</div>
+</div>
+<!-- Additional Grid Placeholder for 12 Items total (repeated logic) -->
+<!-- Product 7 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Black Hole MLC 45L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="large travel duffel backpack in bright orange on a clean warehouse floor with dramatic industrial shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI9P73JQOx5wNRvvNtGZnDNvgU0VO-mtsAiD4GrFOtMhWiN8k6aVuayIk2DVNgQAKTrW6YZjBlvYfhoxaBr9Rin3oJq1eSEv7mL3iNeFHByXgEHNX6oKAzB8XpCcIiP9xor3sGrxs2ok_U65N48m6RuxTl6n-zzPV8Swerv_6j7RNpU7DU3GZmMqxs9WV7P9wS-3nUSX-31FMB3bpNVDarjhIleKlAQwWUV9mOVMT4EoR9azEYtqHh9jgLqiaDSrhwq5Exttygbibv"/>
+<span class="absolute top-4 left-4 bg-tertiary text-white px-3 py-1 text-[10px] font-black uppercase tracking-widest">Sale</span>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Travel / 45L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Black Hole® MLC® 45L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$199</span>
+</div>
+</div>
+<!-- Product 8 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Terravia Pack 36L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="forest green technical backpack for multiday hiking shown against a blurred background of a pine forest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7pUoBuGFLRNVIQxEeXp5-KijNqwwr-an9FMt1yaPmX9-O6cu90iZ_k4zGqvlmB0Xp0Xc8zszp40-r3-4f6xD6VzEgD7KtDTI_u6jzI42qUhWCLVjTj0IuJI5jDhlM53VE4kk8my415UHLs0PBBWdarX0D7_yR7__cm8KSicaYzKh_vPX0i22WopR_a3lgNx8AW4ukjI4ZbepqQHIQVR3GkswGQlvhiSRowKw6ovh4cxankZEWmh1rRiDo6AZCnhAV0P8HQcRdQvdC"/>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Hiking / 36L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Terravia Pack 36L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$169</span>
+</div>
+</div>
+<!-- Product 9 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Arbor Lid Pack 28L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="classic heritage style backpack in teal color with buckled straps shown on a minimal white pedestal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAcGZG8RJHMSkUzhaVOHlvUuUaQfz-GCQt13WO0rulHMQg7omtn-POte3D1KuD8BuVeLWCm2ZmF6tMYEL1xK1PQWomh5QYlKpbxB1GKCxlJz8c5pheo3JMnfQ9vod4OLCKZwzC0OwoO41QpNDzKu2YUR120h_-YCj1UzjAcjrObzctoNoO1DHAjEQPwfVNpQ5tyX1ilnykXvlD8tgQ9vgj1fZJQSz5dHGzPDbsGfWRVtg9F8mqudxrrNzfT50Iz9i5npXIHwYnjVjXf"/>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Everyday / 28L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Arbor Lid Pack 28L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$119</span>
+</div>
+</div>
+<!-- Product 10 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Cragsmith Pack 45L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="heavy-duty charcoal grey climbing pack with external gear loops shown against a weathered rock face" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ5mX0JbdGthClZP-mMG-vofEV_nm7u10T5xbUUAKFdWVQrYW56cG7S4qrHsJpKaZDHrszFLsphKxfqP8Q0DxPtcosicuCWOZCWHGbPyP1HC3VMgDKibmKV13E66Q04Vs1_ThQD8vS5hjnV14zajueZua00VJUVh_SsBU8sj4vcPbsCaNmr8vOI47Q_mGmAjbRKiL-4cr382PEihpIAKN_SykRNYsKr_OMGRmBN9azx5ZM4XaX6i2Th2PfTRhZ542gaNRo2J_dKBcy"/>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Climbing / 45L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Cragsmith Pack 45L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$219</span>
+</div>
+</div>
+<!-- Product 11 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Guidewater Backpack 29L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="fully waterproof roll-top backpack in slate grey submerged halfway in clear river water showing ripple effects" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgCJRp_YNctAen9_EebFgt1YpBgRPcweLGxdmCg06WdnVKmopwvPMike5IknxEEjCr3qEtVxC61BqbMO3IUjideKS2mrO33okRh3OfdR1pC63j9otSSfRLAS8SEiUX9pqQTMelU3KZ6k0xUlQ9u1HQG6P9xu4eKD-_zkRbSF-eu1m53CqSPHYYgORX3bFsHzDfzoU2mPV50GM7b1cFbTNPfQc_JKsWpNs6DKx6e6bbUnV8yzl359tst3IbwrDXIcflSX6c_Y1E_rk3"/>
+<span class="absolute top-4 left-4 bg-secondary-fixed-dim text-on-secondary-fixed px-3 py-1 text-[10px] font-black uppercase tracking-widest">Waterproof</span>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Watersport / 29L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Guidewater Backpack 29L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$299</span>
+</div>
+</div>
+<!-- Product 12 -->
+<div class="group">
+<div class="aspect-[4/5] bg-surface-container-low overflow-hidden relative mb-6">
+<img alt="Atom Tote Pack 20L" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="compact dark olive tote backpack with carry handles resting on a cafe chair with a laptop visible inside" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe4Gx9QDV6-k9kZ5OxmtRSm8DEFHbGP7hmE4BI3IhnN1EowevZ7uju1-cDm-dwk_mz6KQZC8OnAkQjiqcLAhg0pdOFE-YUmA10eXjawmoFIjLIOkkwgW2y-EmTJNFWmiov0Iq0ygP9zSOfA_VOBYIDa0s0i4Lz1_-OPbCaQAzUHw4YnO7t3Rxv4F0kGhRvcZxAcB8zA4-my2zjYhUJDlrV5yyFKJBeVPCnhnPvQ_BPPTho_BSIxW4UX_YP-Aacs6BG6oZaJgcaPyhK"/>
+<button class="absolute bottom-4 right-4 bg-primary text-white p-3 opacity-0 group-hover:opacity-100 transition-all transform translate-y-2 group-hover:translate-y-0">
+<span class="material-symbols-outlined text-sm">add_shopping_cart</span>
+</button>
+</div>
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-[10px] uppercase tracking-widest text-on-surface-variant font-bold mb-1">Everyday / 20L</p>
+<h3 class="text-lg font-bold tracking-tight text-primary leading-tight">Atom Tote Pack 20L</h3>
+</div>
+<span class="font-headline font-bold text-primary">$89</span>
+</div>
+</div>
+</div>
+<!-- Pagination/Load More -->
+<div class="mt-20 flex justify-center">
+<button class="px-12 py-4 border border-primary text-primary font-headline text-sm font-bold uppercase tracking-[0.2em] hover:bg-primary hover:text-white transition-all duration-300">
+                        Load More Gear
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f4ef] dark:bg-stone-900 w-full border-t border-[#c1c8c4]/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 px-12 py-20 w-full max-w-[1920px] mx-auto">
+<div class="col-span-1">
+<div class="text-xl font-bold text-[#153158] dark:text-white mb-4 uppercase tracking-tighter brand-font">ALPINE</div>
+<p class="text-stone-600 dark:text-stone-400 text-sm leading-relaxed mb-6 font-['Work_Sans']">
+                    Building the best products for the wild since 1973. We are in business to save our home planet.
+                </p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-primary">public</span>
+<span class="material-symbols-outlined text-primary">eco</span>
+<span class="material-symbols-outlined text-primary">recycling</span>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-[#153158] dark:text-white uppercase text-xs tracking-widest">Company</h4>
+<ul class="space-y-2">
+<li><a class="text-stone-600 dark:text-stone-400 font-['Work_Sans'] text-base hover:underline decoration-[#611400] underline-offset-4 transition-all duration-300" href="#">Our Mission</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 font-['Work_Sans'] text-base hover:underline decoration-[#611400] underline-offset-4 transition-all duration-300" href="#">Sustainability Report</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 font-['Work_Sans'] text-base hover:underline decoration-[#611400] underline-offset-4 transition-all duration-300" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-[#153158] dark:text-white uppercase text-xs tracking-widest">Support</h4>
+<ul class="space-y-2">
+<li><a class="text-stone-600 dark:text-stone-400 font-['Work_Sans'] text-base hover:underline decoration-[#611400] underline-offset-4 transition-all duration-300" href="#">Repair Program</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 font-['Work_Sans'] text-base hover:underline decoration-[#611400] underline-offset-4 transition-all duration-300" href="#">Contact Us</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 font-['Work_Sans'] text-base hover:underline decoration-[#611400] underline-offset-4 transition-all duration-300" href="#">Returns</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-[#153158] dark:text-white uppercase text-xs tracking-widest">Join the Editorial</h4>
+<p class="text-stone-600 dark:text-stone-400 text-sm leading-relaxed font-['Work_Sans']">
+                    Get field reports and technical updates directly to your inbox.
+                </p>
+<form class="flex border-b border-primary/20 pb-2">
+<input class="bg-transparent border-none focus:ring-0 text-sm w-full font-body placeholder-stone-400" placeholder="Email Address" type="email"/>
+<button class="material-symbols-outlined text-primary" type="submit">arrow_forward</button>
+</form>
+</div>
+</div>
+<div class="px-12 pb-12 w-full max-w-[1920px] mx-auto flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-widest text-stone-400 font-bold">
+<div>© 2024 Alpine Editorial. Built for the long haul.</div>
+<div class="flex space-x-8 mt-4 md:mt-0">
+<a href="#">Privacy Policy</a>
+<a href="#">Terms of Use</a>
+<a href="#">California Transparency</a>
+</div>
+</div>
+</footer>
+</body></html>

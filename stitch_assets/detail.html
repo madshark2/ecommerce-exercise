@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600;700;800;900&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "secondary-fixed-dim": "#accec2",
+                        "on-secondary": "#ffffff",
+                        "surface-variant": "#e3e3de",
+                        "error": "#ba1a1a",
+                        "on-primary-fixed-variant": "#2e476f",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "inverse-on-surface": "#f1f1ec",
+                        "surface-container-low": "#f4f4ef",
+                        "surface": "#fafaf4",
+                        "on-secondary-container": "#4b6b61",
+                        "surface-dim": "#dadad5",
+                        "outline-variant": "#c1c8c4",
+                        "secondary-container": "#c7eade",
+                        "error-container": "#ffdad6",
+                        "primary-container": "#2e476f",
+                        "on-tertiary-fixed": "#3b0900",
+                        "on-primary-fixed": "#001b3d",
+                        "surface-tint": "#465f88",
+                        "on-secondary-fixed": "#002019",
+                        "on-secondary-fixed-variant": "#2e4d44",
+                        "inverse-surface": "#2f312e",
+                        "on-background": "#1a1c19",
+                        "on-error": "#ffffff",
+                        "secondary-fixed": "#c7eade",
+                        "on-tertiary-fixed-variant": "#842509",
+                        "on-primary": "#ffffff",
+                        "surface-container-highest": "#e3e3de",
+                        "on-tertiary-container": "#ff9c81",
+                        "secondary": "#45655b",
+                        "primary": "#153158",
+                        "on-surface": "#1a1c19",
+                        "background": "#fafaf4",
+                        "on-primary-container": "#9db6e5",
+                        "surface-container-high": "#e8e8e3",
+                        "outline": "#717975",
+                        "tertiary": "#611400",
+                        "tertiary-fixed": "#ffdbd1",
+                        "on-surface-variant": "#414845",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-container": "#84260a",
+                        "primary-fixed-dim": "#aec7f7",
+                        "surface-container": "#eeeee9",
+                        "tertiary-fixed-dim": "#ffb5a1",
+                        "surface-bright": "#fafaf4",
+                        "inverse-primary": "#aec7f7",
+                        "primary-fixed": "#d6e3ff"
+                    },
+                    fontFamily: {
+                        "headline": ["Epilogue"],
+                        "body": ["Work Sans"],
+                        "label": ["Work Sans"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Work Sans', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Epilogue', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fafaf4]/85 dark:bg-stone-900/85 backdrop-blur-md">
+<div class="flex justify-between items-center px-8 py-6 w-full max-w-[1920px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-[#153158] dark:text-white uppercase font-headline">ALPINE</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Epilogue'] tracking-tight text-sm font-semibold uppercase text-stone-600 dark:text-stone-400 hover:text-[#153158] dark:hover:text-white transition-colors" href="#">Everyday</a>
+<a class="font-['Epilogue'] tracking-tight text-sm font-semibold uppercase text-stone-600 dark:text-stone-400 hover:text-[#153158] dark:hover:text-white transition-colors" href="#">Hiking</a>
+<a class="font-['Epilogue'] tracking-tight text-sm font-semibold uppercase text-stone-600 dark:text-stone-400 hover:text-[#153158] dark:hover:text-white transition-colors" href="#">Climbing</a>
+<a class="font-['Epilogue'] tracking-tight text-sm font-semibold uppercase text-stone-600 dark:text-stone-400 hover:text-[#153158] dark:hover:text-white transition-colors" href="#">New Arrivals</a>
+</div>
+<div class="flex items-center gap-6">
+<button class="text-[#153158] dark:text-blue-200 hover:opacity-80 transition-opacity duration-200">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="text-[#153158] dark:text-blue-200 hover:opacity-80 transition-opacity duration-200">
+<span class="material-symbols-outlined">shopping_bag</span>
+</button>
+<button class="text-[#153158] dark:text-blue-200 hover:opacity-80 transition-opacity duration-200">
+<span class="material-symbols-outlined">person</span>
+</button>
+</div>
+</div>
+</nav>
+<main class="pt-24 pb-20">
+<!-- Hero Section / Product Top -->
+<section class="max-w-[1920px] mx-auto px-8 md:px-12 grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-20 items-start mt-10 md:mt-20">
+<!-- Asymmetric Image Layout -->
+<div class="lg:col-span-7 relative group">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img alt="Black Hole Pack 32L" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Rugged technical backpack in matte black finish outdoors against a rocky mountain backdrop with sharp daylight and deep shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMg_vViUe1WnJ98Qqukmq-JEVUJWdB76RsN6p6W8px_SYlBix2ZSv4sSelhpPgpw3KpNZDcHxi59W-ccQDZ2_GiS0asuDkVfIR0ipvwlv0rwXXUb3lxOoR85kjt2BqEjDuMdalfnFxLt46CNIx4PjK8ik4pd7bbQxP0Y59f9-61aP0UGZl4QUnbjvVlStQH4LfuBypzQ0dm3hKiWdsa1IvcNiyo5yCsXwE-3RGbzPmcQ8EDO81plLkelc7Qy30RZttpLFBgQ4L1yIG"/>
+</div>
+<!-- Spec Tags Overlay -->
+<div class="absolute top-6 left-6 flex flex-col gap-2">
+<span class="bg-tertiary-fixed text-on-tertiary-fixed-variant px-3 py-1 text-[10px] font-bold tracking-widest uppercase rounded-sm">RECYCLED POLYESTER</span>
+<span class="bg-secondary-container text-on-secondary-container px-3 py-1 text-[10px] font-bold tracking-widest uppercase rounded-sm">WEATHERPROOF</span>
+</div>
+</div>
+<!-- Product Info Sticky -->
+<div class="lg:col-span-5 lg:sticky lg:top-32">
+<div class="mb-4">
+<span class="text-xs font-bold tracking-widest text-on-surface-variant uppercase font-label">Equipment / Packs</span>
+</div>
+<h1 class="text-5xl md:text-6xl font-black tracking-tighter text-primary leading-[0.9] mb-4 uppercase">Black Hole Pack 32L</h1>
+<div class="flex items-baseline gap-4 mb-10">
+<span class="text-3xl font-bold text-primary">$169.00</span>
+<span class="text-sm text-on-surface-variant font-medium">Or 4 payments of $42.25</span>
+</div>
+<!-- Color Selection -->
+<div class="mb-8">
+<p class="text-[10px] font-bold tracking-widest uppercase mb-3 text-on-surface-variant">Color: Obsidian Black</p>
+<div class="flex gap-3">
+<button class="w-8 h-8 rounded-full bg-stone-900 ring-2 ring-primary ring-offset-2"></button>
+<button class="w-8 h-8 rounded-full bg-blue-900 ring-1 ring-outline-variant hover:ring-primary transition-all"></button>
+<button class="w-8 h-8 rounded-full bg-emerald-900 ring-1 ring-outline-variant hover:ring-primary transition-all"></button>
+<button class="w-8 h-8 rounded-full bg-stone-500 ring-1 ring-outline-variant hover:ring-primary transition-all"></button>
+</div>
+</div>
+<!-- Size Selection -->
+<div class="mb-10">
+<div class="flex justify-between mb-3">
+<p class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant">Capacity</p>
+<button class="text-[10px] font-bold tracking-widest uppercase text-tertiary hover:underline">Size Guide</button>
+</div>
+<div class="grid grid-cols-2 gap-2">
+<button class="py-4 border border-outline-variant text-sm font-bold uppercase transition-colors hover:bg-surface-container">25 Liters</button>
+<button class="py-4 border-2 border-primary text-sm font-bold uppercase bg-surface-container-lowest">32 Liters</button>
+</div>
+</div>
+<!-- Actions -->
+<div class="flex flex-col gap-4">
+<button class="w-full bg-primary text-on-primary py-6 text-sm font-bold uppercase tracking-widest rounded-sm hover:opacity-90 active:scale-[0.98] transition-all">
+                        Add to Cart
+                    </button>
+<button class="w-full border border-outline-variant py-4 text-[10px] font-bold uppercase tracking-widest rounded-sm hover:bg-surface-container transition-all flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-sm">favorite</span>
+                        Save to Wishlist
+                    </button>
+</div>
+<!-- Short Value Prop -->
+<div class="mt-12 pt-12 border-t border-outline-variant/20 grid grid-cols-3 gap-4 text-center">
+<div>
+<span class="material-symbols-outlined text-primary mb-2">potted_plant</span>
+<p class="text-[10px] font-bold uppercase leading-tight">Fair Trade Certified</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-primary mb-2">recycling</span>
+<p class="text-[10px] font-bold uppercase leading-tight">100% Recycled Fabric</p>
+</div>
+<div>
+<span class="material-symbols-outlined text-primary mb-2">verified</span>
+<p class="text-[10px] font-bold uppercase leading-tight">Repairable for Life</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Product Story / Details -->
+<section class="mt-32 md:mt-48 px-8 md:px-12 max-w-[1920px] mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-start">
+<div class="md:col-span-5">
+<h2 class="text-4xl font-bold tracking-tighter text-primary mb-10 uppercase leading-none">Built for the <br/> Long Haul.</h2>
+<div class="space-y-6 text-lg leading-relaxed text-on-surface-variant font-body max-w-md">
+<p>The bigger sibling of our best-seller, the Black Hole® Pack 32L is a burly daypack with just the right amount of space to haul your daily essentials, with the durability you expect from our technical gear.</p>
+<p>Crafted from a weather-resistant TPU-film laminate and 100% recycled polyester, this pack thrives in chaotic commutes and unpredictable mountain conditions alike. Its spacious main compartment and easy-access stash pockets keep your gear organized while the padded laptop sleeve handles tech with care.</p>
+</div>
+</div>
+<div class="md:col-span-7 bg-surface-container-low p-10 md:p-20">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-12">
+<div>
+<h3 class="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-6 border-b border-outline-variant/30 pb-2">Technical Specs</h3>
+<ul class="space-y-4 text-sm font-medium">
+<li class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span class="text-on-surface-variant">Weight</span>
+<span>810 g (1 lb 12.6 oz)</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span class="text-on-surface-variant">Dimensions</span>
+<span>22" x 10.5" x 6.75"</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span class="text-on-surface-variant">Material</span>
+<span>8.7-oz 300-denier ripstop</span>
+</li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2">
+<span class="text-on-surface-variant">Lining</span>
+<span>3-oz 200-denier recycled poly</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="text-xs font-bold tracking-[0.2em] uppercase text-primary mb-6 border-b border-outline-variant/30 pb-2">Features</h3>
+<ul class="space-y-3 text-sm text-on-surface-variant">
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-xs text-primary mt-0.5">check_circle</span>
+                                    Heavy-duty daisy chain for lashing
+                                </li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-xs text-primary mt-0.5">check_circle</span>
+                                    Padded 15" laptop sleeve
+                                </li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-xs text-primary mt-0.5">check_circle</span>
+                                    Highly breathable back panel
+                                </li>
+<li class="flex gap-3">
+<span class="material-symbols-outlined text-xs text-primary mt-0.5">check_circle</span>
+                                    Large stretch water-bottle pockets
+                                </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Secondary Imagery Section -->
+<section class="mt-20 md:mt-32 px-8 md:px-12 grid grid-cols-1 md:grid-cols-2 gap-4 h-[600px] overflow-hidden">
+<div class="h-full bg-surface-container">
+<img alt="Technical Detail" class="w-full h-full object-cover" data-alt="Detailed close-up of a high-tech backpack zipper and water-resistant ripstop fabric with matte TPU coating showing fine texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-sbneLzuVTZLhwdnX_ilpMxbaXNiPYmeQLKb69WX0vuWns36Yd0KNwWVB8DfUj-OKHlu9auESFENhvwZUMhZfyC8JIb1soglo4-yIpGJU6jhLNLXT4s3LripNfw1Cf_a3rH7wpxO7ivVM63czcbGkSc65ZP25Ow5jVaVcMAavgVh1lx0qo4XPppHSzCTfG8GIid2E2Eo1M-FIoYY8DvLIw_KvwNDDuvhs6QMnjVA9sofop0iop3QRMBAUTcfd4hga_gppSuH1KXrm"/>
+</div>
+<div class="h-full bg-surface-container relative">
+<img alt="In Action" class="w-full h-full object-cover" data-alt="Person hiking through a misty evergreen forest with a black technical backpack, atmospheric mood with cool tones and soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-hfckakKrzy8xmZ9EMNexO7cxa24-e2iVUHzXitt58E0cPlQn0TXwsRY-1R568zdOFJbCxyIILL94ANXGZPuTA-hwtaoglWCV-7ZZR_gnl4rq7QDb5zuAJmZBbOdiSrVdAOz1UT2VrsV5ve9HkNEIV_bNQHij1azpuEkOFYdR9BM0ZScfX2dcr4K5Vy2RPP7YWUurpXAcTbl7d-DVdD8l9b3Uj_08FHbCwuT9DP8GBFvhpLP3NorpLE1wKBa2BELiYZ3yqRua7avl"/>
+<div class="absolute inset-0 flex items-center justify-center p-12 text-center text-white bg-black/30">
+<div class="max-w-xs">
+<span class="material-symbols-outlined text-4xl mb-4" style="font-variation-settings: 'FILL' 1;">shield</span>
+<h4 class="text-2xl font-bold uppercase tracking-tighter mb-4">Repairable for Life</h4>
+<p class="text-sm font-medium leading-relaxed">Our gear is meant to be used. If it breaks, we'll fix it. It's that simple. Join our repair program and keep gear in play longer.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Related Products -->
+<section class="mt-40 px-8 md:px-12 max-w-[1920px] mx-auto">
+<div class="flex items-end justify-between mb-16">
+<div>
+<span class="text-[10px] font-bold tracking-widest uppercase text-on-surface-variant mb-2 block">The Full Experience</span>
+<h2 class="text-4xl font-bold tracking-tighter text-primary uppercase">Complete the Kit</h2>
+</div>
+<a class="text-sm font-bold uppercase tracking-widest text-primary border-b-2 border-primary pb-1 hidden md:block" href="#">Shop Collection</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Related Item 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative">
+<img alt="Technical Shell" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Lightweight blue technical rain shell jacket displayed flat against a neutral grey studio background with soft lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC23J_YVYGr9S-HZYuvJtRm7J3K5aTRY3EXc9IwDp5cX1RP7ds94Nlr2dW3E3P6y7SGjUVT0MSkKuU-4Ra5_t-jcrrSDOSoY16lFZ_IksjpXflPrSS7x1woVzrQnHp2F0JQXQMWEDNypXVtRLGvdbpusye51vp_sniAP_Uj0FSNAp0sRPwq-f1EqXMSusJ2uYKu5mUS_kz02gAnUH8rqzbJqLXjG3armDFPlbfeCR5RGD22eHAak_HQhx97hnBllHMeYenKhQ1ZhEpN"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-sm font-bold uppercase tracking-tight text-primary">Torrentshell 3L Jacket</h3>
+<p class="text-xs text-on-surface-variant font-medium mt-1">Waterproof Protection</p>
+</div>
+<span class="text-sm font-bold text-primary">$179</span>
+</div>
+</div>
+<!-- Related Item 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative">
+<img alt="Hiking Boots" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Classic leather hiking boots with red laces on a clean white surface with dramatic studio lighting and sharp details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwejVOlNLkP8VH4Z1d2ShsBMo-uaU97b76RSDQOeYZ81zpH0KYaiXLQAO_pcgj3OuBaB9Oz3ayh5NnJWkhszLQYiF6RLtFaOKWb3KlYI0-IYka05PlHohqn-boVqfWElzqEtUhIOMcAqJR56QsXniTa0iBtigkDzmL3fEyW5_FVTPyFJhNYBQGxkIjtLedevevKawStbMN8kjYN1Z2Tb2_214ZX93tlISGB78DSrw9qbe1nHrNHS9VhUwbY1K2FHck1iMnaMr0L3b4"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-sm font-bold uppercase tracking-tight text-primary">All-Season Trail Boots</h3>
+<p class="text-xs text-on-surface-variant font-medium mt-1">Durability &amp; Grip</p>
+</div>
+<span class="text-sm font-bold text-primary">$240</span>
+</div>
+</div>
+<!-- Related Item 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative">
+<img alt="Base Layer" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Lightweight grey merino wool base layer top on a flat surface with intentional creases and natural texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnbFWiSClkkWvkY0_pt8OeHGWigS61PiEU27XaMfAtUz8yRztiuGoDi1VAlCbx1w7WS4ZvvzaprN-vAnDabxO0KemmLn8cBeys21ySow_XDdki-ChT9k67MFNF37dm0cjOYDxrzay3wkpcfmB5e9g551P6MHRtIXdxsYQEW53Lzt0flw73p7aRNa8Xv7zpOCtL4dsF7dMDl9X6CvIw-zlb5Ke1ikqPLWvqMlBrLyhrGq5SfivgxasWrF3zgZlCkINYJTR37BN7xFRu"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-sm font-bold uppercase tracking-tight text-primary">Merino Base Layer</h3>
+<p class="text-xs text-on-surface-variant font-medium mt-1">Temperature Regulation</p>
+</div>
+<span class="text-sm font-bold text-primary">$89</span>
+</div>
+</div>
+<!-- Related Item 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container-low mb-6 overflow-hidden relative">
+<img alt="Technical Pants" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="Dark olive green cargo hiking pants showing pocket details and durable reinforced stitching against a plain background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSusAvd8YeyL169aklxOUsbvkK1vHvfvFN5y3NoUA9Qmm9fesDjgNg41-ksgeI2BQPIi_S6TIdebJLR6ZMMrZ2LCOQiKC-U2FZLH6GIHIqnwA4Egt5j1dxpJaXWB3wppblNQUswJynUX5mduIXWOQlAvIolq-i8t5NXsZw2zo2VmoUeCPJJRQN4v0bGBO0v9o-XgThIkIVuJjo3SLIZx8KdxJvo-trY3kJb8gqM7DHc9JVnEYZG99BBF_LSAg8bIWBd1Dt_YyCmrSM"/>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-sm font-bold uppercase tracking-tight text-primary">Altvia Trail Pants</h3>
+<p class="text-xs text-on-surface-variant font-medium mt-1">Mobility &amp; Toughness</p>
+</div>
+<span class="text-sm font-bold text-primary">$129</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f4f4ef] dark:bg-stone-900 w-full border-t border-[#c1c8c4]/20">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-16 px-12 py-20 w-full max-w-[1920px] mx-auto">
+<div class="col-span-1">
+<div class="text-xl font-bold text-[#153158] dark:text-white mb-4 font-headline uppercase">ALPINE</div>
+<p class="text-stone-600 dark:text-stone-400 text-sm leading-relaxed mb-6 font-body">Defining the digital topography of the modern outdoors. Built for the long haul, designed for the intentional.</p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity">public</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity">photo_camera</span>
+<span class="material-symbols-outlined text-primary cursor-pointer hover:opacity-70 transition-opacity">mail</span>
+</div>
+</div>
+<div class="col-span-1">
+<h4 class="text-xs font-bold tracking-widest uppercase text-primary mb-8 font-label">Company</h4>
+<ul class="space-y-4 font-body text-base">
+<li><a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#611400] underline-offset-4 transition-all" href="#">Our Mission</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#611400] underline-offset-4 transition-all" href="#">Sustainability Report</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#611400] underline-offset-4 transition-all" href="#">Repair Program</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#611400] underline-offset-4 transition-all" href="#">Careers</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="text-xs font-bold tracking-widest uppercase text-primary mb-8 font-label">Support</h4>
+<ul class="space-y-4 font-body text-base">
+<li><a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#611400] underline-offset-4 transition-all" href="#">Store Locator</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#611400] underline-offset-4 transition-all" href="#">Contact Us</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#611400] underline-offset-4 transition-all" href="#">Order Tracking</a></li>
+<li><a class="text-stone-600 dark:text-stone-400 hover:underline decoration-[#611400] underline-offset-4 transition-all" href="#">Returns &amp; Exchanges</a></li>
+</ul>
+</div>
+<div class="col-span-1">
+<h4 class="text-xs font-bold tracking-widest uppercase text-primary mb-8 font-label">Newsletter</h4>
+<p class="text-xs text-on-surface-variant mb-6 leading-relaxed">Join our field notes for expedition reports and technical releases.</p>
+<div class="flex">
+<input class="w-full bg-surface-container-highest border-none focus:bg-surface-container-lowest focus:ring-0 focus:border-b-2 focus:border-primary px-4 py-3 text-sm rounded-none" placeholder="Email address" type="email"/>
+<button class="bg-primary text-on-primary px-4 py-3 active:scale-95 transition-transform">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-outline-variant/10 text-center md:text-left">
+<p class="text-[10px] font-bold tracking-widest uppercase text-stone-500">© 2024 Alpine Editorial. Built for the long haul.</p>
+</div>
+</footer>
+</body></html>

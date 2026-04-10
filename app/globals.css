@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-secondary-fixed-dim: #accec2;
+  --color-on-secondary: #ffffff;
+  --color-surface-variant: #e3e3de;
+  --color-error: #ba1a1a;
+  --color-on-primary-fixed-variant: #2e476f;
+  --color-on-error-container: #93000a;
+  --color-on-tertiary: #ffffff;
+  --color-inverse-on-surface: #f1f1ec;
+  --color-surface-container-low: #f4f4ef;
+  --color-surface: #fafaf4;
+  --color-on-secondary-container: #4b6b61;
+  --color-surface-dim: #dadad5;
+  --color-outline-variant: #c1c8c4;
+  --color-secondary-container: #c7eade;
+  --color-error-container: #ffdad6;
+  --color-primary-container: #2e476f;
+  --color-on-tertiary-fixed: #3b0900;
+  --color-on-primary-fixed: #001b3d;
+  --color-surface-tint: #465f88;
+  --color-on-secondary-fixed: #002019;
+  --color-on-secondary-fixed-variant: #2e4d44;
+  --color-inverse-surface: #2f312e;
+  --color-on-background: #1a1c19;
+  --color-on-error: #ffffff;
+  --color-secondary-fixed: #c7eade;
+  --color-on-tertiary-fixed-variant: #842509;
+  --color-on-primary: #ffffff;
+  --color-surface-container-highest: #e3e3de;
+  --color-on-tertiary-container: #ff9c81;
+  --color-secondary: #45655b;
+  --color-primary: #153158;
+  --color-on-surface: #1a1c19;
+  --color-background: #fafaf4;
+  --color-on-primary-container: #9db6e5;
+  --color-surface-container-high: #e8e8e3;
+  --color-outline: #717975;
+  --color-tertiary: #611400;
+  --color-tertiary-fixed: #ffdbd1;
+  --color-on-surface-variant: #414845;
+  --color-surface-container-lowest: #ffffff;
+  --color-tertiary-container: #84260a;
+  --color-primary-fixed-dim: #aec7f7;
+  --color-surface-container: #eeeee9;
+  --color-tertiary-fixed-dim: #ffb5a1;
+  --color-surface-bright: #fafaf4;
+  --color-inverse-primary: #aec7f7;
+  --color-primary-fixed: #d6e3ff;
+
+  --font-headline: var(--font-epilogue), sans-serif;
+  --font-body: var(--font-work-sans), sans-serif;
+  --font-label: var(--font-work-sans), sans-serif;
+
+  --radius-sm: 0.125rem;
+  --radius-md: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-on-background);
+  font-family: var(--font-body);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
